@@ -1,0 +1,43 @@
+.example-card {
+    
+  background-image: linear-gradient(to right, #9b88b4, #c09059);
+  padding: 150px;
+
+
+}
+.login{
+  display: flex;
+  justify-content: center ;
+}
+
+.btn1{
+  border: #9b88b4;
+}
+
+nav {
+  padding: 165px;
+}
+a {
+  padding: 29px;
+  text-decoration: none;
+}
+.navret {
+  font-size: xx-large;
+  color: antiquewhite;
+}
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+#reg{
+  color: red;
+}
+img.img-fluid{
+  display: flex;
+  justify-content:left ;
+  width: 100px;
+  height: 100%;
+}

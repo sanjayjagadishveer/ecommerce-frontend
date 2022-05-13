@@ -1,0 +1,119 @@
+<!-- 
+<div>
+    <div *ngIf="categoryname == 'Cameras'" class="card">
+      <div *ngFor="let camera of cameras" class="example-card">
+        <mat-card>
+          <mat-card-header>
+            <a (click)="selectCameras(camera.link)"> <mat-card-title>{{camera.name}}</mat-card-title></a>
+           </mat-card-header>
+          <img
+            mat-card-image
+            src={{camera.img}}
+            style="width: 300px"
+            alt="mobile"/><button mat-raised-button color="primary" >BUY</button>
+        </mat-card>
+      </div>
+   
+    </div>
+  </div>
+  <div>
+    <div *ngIf="categoryname === 'Phones'" class="card">
+      <div *ngFor="let phone of phones" class="example-card">
+        <mat-card>
+          <mat-card-header>
+            <a (click)="selectPhones(phone.link)"> <mat-card-title>{{phone.name}}</mat-card-title></a>
+           </mat-card-header>
+          <img
+            mat-card-image
+            src={{phone.img}}
+            style="width: 300px"
+            alt="mobile"/>
+            <button mat-raised-button color="primary" >BUY</button>
+        </mat-card>
+      </div>
+   
+    </div>
+  </div>
+  <div>
+    <div *ngIf="categoryname === 'Laptops'" class="card">
+      <div *ngFor="let laptop of laptops" class="example-card">
+        <mat-card>
+          <mat-card-header>
+            <a (click)="selectLaptops(laptop.link) "> <mat-card-title>{{laptop.name}}</mat-card-title></a>
+           </mat-card-header>
+          <img
+            mat-card-image
+            src={{laptop.img}}
+            style="width: 300px"
+            alt="mobile"/>
+            <button mat-raised-button color="primary" >BUY</button>
+        </mat-card>
+      </div>
+   
+    </div>
+  </div>
+  <div>
+    <div *ngIf="categoryname === 'Televisions'" class="card">
+      <div *ngFor="let television of televisions" class="example-card">
+        <mat-card>
+          <mat-card-header>
+            <a (click)="selectTelevisions(television.link) "> <mat-card-title>{{television.name}}</mat-card-title></a>
+           </mat-card-header>
+          <img
+            mat-card-image
+            src={{television.img}}
+            style="width: 300px"
+           />
+
+        <button mat-raised-button color="primary">BUY</button>
+        </mat-card>
+      </div>
+   
+    </div>
+  </div> -->
+
+  <!-- <ul>
+  <div *ngFor="let std of list">
+    <li>{{std.mainProductName}}</li>
+  </div>
+</ul> -->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+      <div class="navret">SHOPPERS MART</div>
+      <div>
+          <nav>
+              <a routerLink="/home">Home</a>
+              <!-- <a routerLink="/aboutus">About us</a>
+              <a routerLink="/contactus">Contact us</a> -->
+              <!-- <a routerLink="/login">Login</a> -->
+              <a routerLink="/cart">Cart</a>
+              <a routerLink="/cameras"></a>
+              <a routerLink="/televisions"></a>
+              <a routerLink="/laptops"></a>
+              <a routerLink="/phones"></a>
+              <a routerLink="/registration"></a>
+          </nav>
+      </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+
+<div class="cat">
+  <div *ngFor="let products of productList" class="example-card">
+    <mat-card>
+      <mat-card-header>
+      {{products.name}}
+       </mat-card-header>
+       <img
+       mat-card-image
+       [src]="products.productImage"
+       style="width: 300px"
+       alt="mobile"/>
+       <mat-card-content> {{products.description}}</mat-card-content>
+       <mat-card-content> {{products.price}}</mat-card-content>
+     <button mat-raised-button color="primary">BUY</button>
+    </mat-card>
+  </div>
+</div>

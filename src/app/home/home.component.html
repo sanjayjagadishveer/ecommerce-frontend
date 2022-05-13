@@ -1,0 +1,66 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <div class="navret">SHOPPERS MART</div>
+      <div>
+        <nav>
+          <a routerLink="/home">Home</a>
+          <a routerLink="/aboutus">About us</a>
+          <a routerLink="/contactus">Contact us</a>
+          <a routerLink="/login">Login</a>
+          <a routerLink="/cart">Cart</a>
+          <a routerLink="/cameras"></a>
+          <a routerLink="/televisions"></a>
+          <a routerLink="/laptops"></a>
+          <a routerLink="/phones"></a>
+          <a routerLink="/registration"></a>
+        </nav>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+      <img
+        src="https://s3.ap-southeast-1.amazonaws.com/images.asianage.com/images/aa-Cover-iiil0cn21ludapnv2i1v17hgq6-20190926164539.Medi.jpeg"
+      class="offer"
+        />
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img
+        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.ssl.cf3.rackcdn.com/MAX-Friday/HDFCoffer-Mobile-07Dec18.jpg"
+        class="offer"
+      />
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div>
+    <div class="card">
+      <div *ngFor="let std of list">
+        <div  (click)="navigateCategory(std.id)">
+        <mat-card>
+          <mat-card-header>
+            <!-- <a (click)="onNavigateTo(category.name)">  -->
+              <mat-card-title>{{std.mainProductName}}</mat-card-title>
+           </mat-card-header>
+          <img
+            mat-card-image
+            [src]="std.mainProductImage"
+            style="width: 300px"
+            alt="mobile"/>
+        </mat-card>
+      </div></div>
+      </div>
+   
+    </div>
+ <div class="flex-container">
+    <div> <img
+      src="https://www.ashianamulberry.com/wp-content/uploads/2020/07/banking-partners.jpg"
+      class="offer"
+    /></div>
+      
+  </div>
+
+  <!-- <ul>
+    <div *ngFor="let std of list">
+      <li>{{std.mainProductName}}</li>
+      <li><img [src]="std.mainProductImage"></li>
+    </div>
+  </ul> -->

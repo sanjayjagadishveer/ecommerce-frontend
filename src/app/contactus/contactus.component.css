@@ -1,0 +1,28 @@
+.example-card {
+   
+    background-image: linear-gradient(to right, #9b88b4, #c09059);
+    padding: 130px;
+   
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+nav {
+    padding: 165px;
+  }
+  a {
+    padding: 29px;
+    text-decoration: none;
+  }
+  .navret {
+    font-size: xx-large;
+    color: antiquewhite;
+  }
+  a:link {
+    color: white;
+  }
+  
+  a:visited {
+    color: white;
+  }

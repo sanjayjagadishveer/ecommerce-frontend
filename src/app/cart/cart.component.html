@@ -1,0 +1,65 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <div class="navret">SHOPPERS MART</div>
+      <div>
+        <nav>
+          <a routerLink="/home">Home</a>
+          <a routerLink="/aboutus">About us</a>
+          <a routerLink="/contactus">Contact us</a>
+          <a routerLink="/login">Login</a>
+          <a routerLink="/cart">Cart</a>
+          <a routerLink="/cameras"></a>
+          <a routerLink="/televisions"></a>
+          <a routerLink="/laptops"></a>
+          <a routerLink="/phones"></a>
+          <a routerLink="/registration"></a>
+        </nav>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <div class="container">
+
+  
+    <mat-card class="example-card">
+       
+
+        <mat-card-content>
+            <div>
+                <img mat-card-md-image src="https://cdn.shopify.com/app-store/listing_images/2b9bba2ab61edabc6d836f14f9377671/icon/CL-Lhc30lu8CEAE=.png" >
+            
+            </div>
+            <h4>Cart Orders</h4>
+        
+           
+            <div>
+               <mat-form-field appearance="fill">
+                   <mat-label>Product Name</mat-label>
+                   <input matInput>
+                 </mat-form-field>
+            </div>
+           
+             <h4>select quantity</h4>
+             <mat-form-field appearance="fill">
+               <mat-label>Choose an option</mat-label>
+               <select matNativeControl >
+                 <option value="" selected></option>
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+               </select>
+             </mat-form-field>
+    
+             <div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Price</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+             </div>
+    
+             <button mat-raised-button color="primary">Order Now</button>
+        </mat-card-content>
+      </mat-card>
+
+</div>
